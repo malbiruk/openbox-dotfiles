@@ -43,7 +43,6 @@ our $SCHEMA = [
     {cat => ['education',   'Education',   'applications-science']},
     {beg => ['Games',        'Games',       'applications-games']},
 		{item => ["/home/klim/Games/In_Exilium/In_Exilium", "In Exilium", "icon"]},
-		{item => ["/home/klim/Games/INSIDE/start", "Inside", "/home/klim/Games/INSIDE/icon.png"]},
 	{end => undef},
     {cat => ['other',       'Google Apps',       'applications-other']},
     {cat => ['graphics',    'Graphics',    'applications-graphics']},
