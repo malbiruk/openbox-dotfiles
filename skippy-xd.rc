@@ -65,7 +65,7 @@ showAll = true
 
 [normal]
 tint = black
-tintOpacity = 50
+tintOpacity = 20
 opacity = 255
 
 [highlight]
