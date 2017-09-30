@@ -1,0 +1,7 @@
+feh --bg-scale /home/klim/Pictures/wallpaper2.png
+compton &
+#chromium &
+synclient VertScrollDelta=20 HorizScrollDelta=40 HorizTwoFingerScroll=1 VertEdgeScroll=0 AccelFactor=0.089 VertScrollDelta=-113 TapButton1=1 TapButton2=3 &
+syndaemon -i 0.5 -t -K -R &
+setxkbmap -layout us,ru -option grp:shift_caps_toggle,grp:switch,grp_led:scroll,compose:menu &
+xrdb -merge ~/.Xresources
