@@ -1,5 +1,6 @@
 feh --bg-scale /home/klim/Pictures/wallpaper2.png
 compton &
+brightside &
 quicktile --daemonize &
 synclient VertScrollDelta=20 HorizScrollDelta=40 HorizTwoFingerScroll=1 VertEdgeScroll=0 AccelFactor=0.089 VertScrollDelta=-113 TapButton1=1 TapButton2=3 &
 syndaemon -i 0.5 -t -K -R &
