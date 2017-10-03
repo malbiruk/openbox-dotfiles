@@ -35,7 +35,7 @@ our $SCHEMA = [
     {item => ['xdg-open http://', 'Web Browser',  'web-browser']},
     {item => ['gmrun',            'Run command',  'system-run']},
 
-    {sep => 'Categories'},
+    {sep => undef},
 
     #          NAME            LABEL                ICON
     {cat => ['utility',     'Accessories', 'applications-utilities']},
@@ -66,33 +66,33 @@ our $SCHEMA = [
     #{sep       => undef},
 
     ## Custom advanced settings
-    {sep       => undef},
-    {beg => ['Advanced Settings', 'applications-engineering']},
+#    {sep       => undef},
+#    {beg => ['Advanced Settings', 'applications-engineering']},
 
       # obmenu-generator category
-      {beg => ['Obmenu-Generator', 'accessories-text-editor']},
-        {item      => ["$editor ~/.config/obmenu-generator/schema.pl", 'Menu Schema', 'text-x-generic']},
-        {item      => ["geany ~/.config/obmenu-generator/config.pl", 'Menu Config', 'text-x-generic']},
+#      {beg => ['Obmenu-Generator', 'accessories-text-editor']},
+#        {item      => ["$editor ~/.config/obmenu-generator/schema.pl", 'Menu Schema', 'text-x-generic']},
+#        {item      => ["geany ~/.config/obmenu-generator/config.pl", 'Menu Config', 'text-x-generic']},
+#
+#        {sep  => undef},
+#        {item => ['obmenu-generator -s -c',    'Generate a static menu',             'accessories-text-editor']},
+#        {item => ['obmenu-generator -s -i -c', 'Generate a static menu with icons',  'accessories-text-editor']},
+#        {sep  => undef},
+#        {item => ['obmenu-generator -p',       'Generate a dynamic menu',            'accessories-text-editor']},
+#        {item => ['obmenu-generator -p -i',    'Generate a dynamic menu with icons', 'accessories-text-editor']},
+#        {sep  => undef},
 
-        {sep  => undef},
-        {item => ['obmenu-generator -s -c',    'Generate a static menu',             'accessories-text-editor']},
-        {item => ['obmenu-generator -s -i -c', 'Generate a static menu with icons',  'accessories-text-editor']},
-        {sep  => undef},
-        {item => ['obmenu-generator -p',       'Generate a dynamic menu',            'accessories-text-editor']},
-        {item => ['obmenu-generator -p -i',    'Generate a dynamic menu with icons', 'accessories-text-editor']},
-        {sep  => undef},
-
-        {item    => ['obmenu-generator -d', 'Refresh icon set', 'view-refresh']},
-      {end => undef},
+#       {item    => ['obmenu-generator -d', 'Refresh icon set', 'view-refresh']},
+#     {end => undef},
 
       # Openbox category
-      {beg => ['Openbox', 'openbox']},
-        {item      => ["$editor ~/.config/openbox/autostart", 'Openbox Autostart',   'text-x-generic']},
-        {item      => ["$editor ~/.config/openbox/rc.xml",    'Openbox RC',          'text-x-generic']},
-        {item      => ["$editor ~/.config/openbox/menu.xml",  'Openbox Menu',        'text-x-generic']},
-        {item      => ['openbox --reconfigure',               'Reconfigure Openbox', 'openbox']},
-      {end => undef},
-    {end => undef},
+#      {beg => ['Openbox', 'openbox']},
+#        {item      => ["$editor ~/.config/openbox/autostart", 'Openbox Autostart',   'text-x-generic']},
+#        {item      => ["$editor ~/.config/openbox/rc.xml",    'Openbox RC',          'text-x-generic']},
+#        {item      => ["$editor ~/.config/openbox/menu.xml",  'Openbox Menu',        'text-x-generic']},
+#        {item      => ['openbox --reconfigure',               'Reconfigure Openbox', 'openbox']},
+#      {end => undef},
+#    {end => undef},
 
     {sep => undef},
 
