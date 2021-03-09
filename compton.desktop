@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=compton
+Exec=compton -cCGb --backend glx --vsync opengl --xrender-sync --xrender-sync-fence
