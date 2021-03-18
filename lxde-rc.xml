@@ -162,9 +162,9 @@
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
     <noStrut>no</noStrut>
-    <stacking>Above</stacking>
+    <stacking>Below</stacking>
     <!-- 'Above', 'Normal', or 'Below' -->
-    <direction>Vertical</direction>
+    <direction>Horizontal</direction>
     <!-- 'Vertical' or 'Horizontal' -->
     <autoHide>no</autoHide>
     <hideDelay>300</hideDelay>
@@ -409,7 +409,7 @@
     <!--keybindings for LXPanel -->
     <keybind key="W-d">
       <action name="Execute">
-        <command>xfce4-appfinder --disable-server</command>
+        <command>kupfer</command>
       </action>
     </keybind>
     <keybind key="A-F2">
@@ -825,11 +825,19 @@
         <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-    <application type="normal">
-      <position>
-        <x>center</x>
-        <y>center</y>
-      </position>
+   <application class="*">
+       <focus>yes</focus>
+       <position>
+         <x>center</x>
+         <y>center</y>
+       </position>
+   </application>
+   <application name="panel">
+        <skip_taskbar>yes</skip_taskbar>
+        <layer>below</layer>
+    </application>
+    <application name="panel" type="dock">
+        <layer>below</layer>
     </application>
     <!--
   # this is an example with comments through out. use these to make your
