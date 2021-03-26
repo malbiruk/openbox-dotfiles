@@ -1,3 +1,3 @@
 # openbox-dotfiles
 My openbox setup
-![neofetch](Screenshot_from_2021-03-19_21-27-15.png)
+![neofetch](2021-03-26-225217_1920x1080_scrot.png)
