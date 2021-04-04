@@ -17,7 +17,7 @@
        under the mouse pointer. when followMouse is enabled -->
     <underMouse>no</underMouse>
     <!-- move focus under the mouse, even when the mouse is not moving -->
-    <focusDelay>200</focusDelay>
+    <focusDelay>500</focusDelay>
     <!-- when followMouse is enabled, the mouse must be inside the window for
        this many milliseconds (1000 = 1 sec) before moving focus to it -->
     <raiseOnFocus>yes</raiseOnFocus>
@@ -37,7 +37,7 @@
     <primaryMonitor/>
   </placement>
   <theme>
-    <name>1977-BlueLite</name>
+    <name>1977-Black</name>
     <titleLayout>DLIC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -443,7 +443,7 @@
     <!-- Launch xfce4-screenshooter for screenshots -->
     <keybind key="Print">
       <action name="Execute">
-        <command>gnome-screenshot</command>
+          <command>scrot -sq 100 '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'</command>
       </action>
     </keybind>
     <!-- Launch LXRandR when Fn+Screen is pressed -->
@@ -835,10 +835,10 @@
     </application>
     <application name="panel">
       <skip_taskbar>yes</skip_taskbar>
-      <layer>below</layer>
+      <layer>above</layer>
     </application>
     <application name="panel" type="dock">
-      <layer>below</layer>
+      <layer>above</layer>
     </application>
     <!--
   # this is an example with comments through out. use these to make your
