@@ -37,7 +37,7 @@
     <primaryMonitor/>
   </placement>
   <theme>
-    <name>1977-Black</name>
+    <name>1977-my</name>
     <titleLayout>DLIC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -371,9 +371,9 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>PCManFM</name>
+          <name>Thunar</name>
         </startupnotify>
-        <command>pcmanfm</command>
+        <command>thunar</command>
       </action>
     </keybind>
     <keybind key="W-p">
@@ -403,7 +403,7 @@
     </keybind>
     <keybind key="C-A-t">
       <action name="Execute">
-        <command>lxterminal</command>
+        <command>xfce4-terminal</command>
       </action>
     </keybind>
     <!--keybindings for LXPanel -->
@@ -443,7 +443,7 @@
     <!-- Launch xfce4-screenshooter for screenshots -->
     <keybind key="Print">
       <action name="Execute">
-          <command>scrot -sq 100 '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'</command>
+        <command>scrot -sq 100 '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'</command>
       </action>
     </keybind>
     <!-- Launch LXRandR when Fn+Screen is pressed -->
